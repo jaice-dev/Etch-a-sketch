@@ -27,6 +27,12 @@ body {
     width: 100px;
 }
 
+#colorPicker {
+    height: 100px;
+    width: 100px;
+    border-style: none;
+}
+
 #EtchContainer {
     display: flex;
     flex-direction: column;
