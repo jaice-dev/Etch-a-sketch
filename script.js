@@ -30,7 +30,7 @@ drawGrid();
 const squares = document.querySelectorAll(".square");
 squares.forEach(square => {
     square.addEventListener('mouseenter', () => {
-        square.style.backgroundColor = 'CadetBlue';
+        square.style.backgroundColor = document.querySelector("#colorPicker").value;
     })
 })
 

@@ -14,8 +14,10 @@ body {
     gap: 50px;
 }
 
-#controls {
+#settings {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -43,13 +45,6 @@ body {
     border-style: solid;
     border-width: thin;
 }
-
-
-
-
-
-
-
 
 footer {
     display: flex;
