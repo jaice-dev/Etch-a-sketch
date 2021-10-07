@@ -1,0 +1,23 @@
+.square {
+    width: 40px;
+    height: 40px;
+    color: grey;
+    background-color: grey;
+    border-color: black;
+    border-style: solid;
+;
+
+}
+
+
+/* square
+square width and height
+*/
+
+.rowContainer {
+    display: flex;
+}
+
+#EtchContainer {
+
+}
