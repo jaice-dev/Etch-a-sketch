@@ -2,14 +2,21 @@ const gridSize= 16;
 const squareSize = 200;
 
 const etchContainer = document.querySelector("#EtchContainer")
-const rowContainer = document.createElement('div');
-rowContainer.classList.add('rowContainer');
-
-for (let i = 0; i < gridSize; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
-    rowContainer.appendChild(square)
-}
-etchContainer.appendChild(rowContainer)
 //append to row container
 //append rows to grid container
+
+function drawGrid() {
+    for (let i = 0; i < gridSize; i++) {
+        const rowContainer = document.createElement('div');
+        for (let j = 0; j < gridSize; j++) {
+            rowContainer.classList.add('rowContainer');
+
+            const square = document.createElement('div');
+            square.classList.add('square');
+            rowContainer.appendChild(square)
+        }
+        etchContainer.appendChild(rowContainer);
+    }
+}
+
+drawGrid();
