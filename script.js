@@ -19,6 +19,12 @@ function drawGrid() {
     }
 }
 
+function resetGrid() {
+    squares.forEach(square => {
+        square.style.backgroundColor = 'grey';
+    })
+}
+
 drawGrid();
 
 const squares = document.querySelectorAll(".square");
@@ -27,3 +33,6 @@ squares.forEach(square => {
         square.style.backgroundColor = 'CadetBlue';
     })
 })
+
+const resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', resetGrid);
