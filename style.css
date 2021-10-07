@@ -19,5 +19,6 @@ square width and height
 }
 
 #EtchContainer {
-
+    display: flex;
+    flex-direction: column;
 }
